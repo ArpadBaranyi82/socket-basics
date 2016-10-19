@@ -13,21 +13,14 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-
-		<div class="messages">
-			
-		</div>
 	
-        <form id="message-form"> 
-			<input type="text" name="message" />
-			<input type="submit" />
+		<h1>Join Chat</h1>
+		
+		<form action="/chat.html">
+			<label>Display Name:</label>
+			<input type="text" name="name" placeholder="your name..." />
+			<input type="submit" value="Join" />
 		</form>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.5.0/socket.io.js"></script>
-		<script src="js/vendor/moment.js"></script>
-		<script src="js/queryParams.js"></script>
-		<script src="js/main.js"></script>
     </body>
 </html>
