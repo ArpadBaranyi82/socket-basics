@@ -6,9 +6,16 @@ console.log(name + " wants to join " + room);
 
 socket.on("connect", function(){
 	console.log("connected to socket io....");
+	
+	socket.emit("joinRoom", {
+		name: name,
+		room: room
+	});
 });
 
 $(document).ready(function(){
+	
+	$(".room-title").text(room);
 	
 socket.on("message", function(message){
 	var momentTimestamp = moment.utc(message.timestamp);
